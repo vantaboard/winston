@@ -109,7 +109,7 @@ declare namespace winston {
   class Logger extends NodeJSStream.Transform {
     constructor(options?: LoggerOptions);
 
-    trace: string | undefined;
+    static trace?: string;
     silent: boolean;
     format: logform.Format;
     levels: Config.AbstractConfigSetLevels;
